@@ -1,0 +1,17 @@
+*{
+
+}
+body {
+background-color: gray;
+}
+
+.input{
+    padding: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+div{
+
+}
