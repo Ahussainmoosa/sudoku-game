@@ -11,8 +11,7 @@
     <div class="heading">
         <h1> sudoku game</h1>
         <h1 id="gameFinsh"></h1>
-        <h2 id="timer"></h2>
-    </div>
+        <h2 id="timer">00:00:00</h2>    </div>
     <div class="allNumbers" >
     <div class="box">
         <input type="text" maxlength="1" id="val1" >
@@ -119,13 +118,13 @@
         <input type="text" maxlength="1" id="val78" placeholder="9" disabled>
         <input type="text" maxlength="1" id="val79" placeholder="3" disabled>
         <input type="text" maxlength="1" id="val80" >
-        <input type="text" maxlength="1" id="val81" placeholder="8" disabled>
+        <input type="text" maxlength="1" id="val81" placeholder="5" disabled>
     </div>
 
     
     </div>
     <div class="input" >
-        <button id="Start">Start </button>
+        <button id="startBtn" onclick="startTimer()">Start</button>
         <button id="Finsh">Finsh</button>
         
         

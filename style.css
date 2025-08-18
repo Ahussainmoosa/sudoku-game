@@ -1,5 +1,6 @@
 html, body {
     align-items: center;
+    color:black ;
 }
 .heading{
     text-align: center;
@@ -9,14 +10,17 @@ html, body {
     height: 50px;
     text-align: center;
     font-size: 40px;
+    color: rgb(9, 86, 53);
+    border: 2px solid black;
+    color: white;
+
 }
 .box {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 0;
-    border:1px solid transparent;
-    
+    padding: 0.5px;
+    color: white;
     
 }
 button{
