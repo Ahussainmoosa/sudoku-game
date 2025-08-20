@@ -64,6 +64,10 @@ let insertedValue25='';
 
 
 let secouns='0'
+
+array.forEach(element => {
+    
+});
 //input cheak value ---------------------------------
 value1.addEventListener('input', 
     function() {
@@ -466,12 +470,6 @@ value80.addEventListener('input',
 
         }
     });
-
-
-//-------------------------------------------------
-
-//-------------finsh function ----------------
-
 //------------start function
 start.addEventListener("click", function() {
     final.innerHTML = "The time is: " + time.innerText; // Display the timer value when Start button is clicked

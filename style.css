@@ -1,41 +1,91 @@
+*{
+    background-image: url("https://tinyurl.com/3yjrhrs6"); 
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin: 10px;
+    padding: 0;
+}
 html, body {
     align-items: center;
-    color:black ;
+    color:white ;
+    
 }
 .heading{
     text-align: center;
 }
-.box input[type="text"]{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 40px;
-    color: rgb(9, 86, 53);
-    border: 2px solid black;
-    color: white;
-
-}
 .box {
-    display: flex;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
     justify-content: center;
-    padding: 0.5px;
-    color: white;
-    
+    margin-bottom: 20px;
 }
-button{
+
+.box input {
     width: 50px;
     height: 50px;
+    text-align: center;
+    font-size: 35px;
+    border: none;   
+    outline: none;
+    box-sizing: border-box;
 }
-.input{
-    display: flex;
-    justify-content:center ;
-    padding: 25px;
+
+.box input {
+    border: 1px solid #999;
+}
+
+.box input::placeholder{
+    color: white;
+}
+
+.box input:nth-child(9n+1) {
+    border-left: 3px solid black;  
+}
+.box input:nth-child(9n) {
+    border-right: 3px solid black; 
+}
+.box input:nth-child(-n+9) {
+    border-top: 3px solid black; 
+}
+.box input:nth-child(n+73) {
+    border-bottom: 3px solid black; 
+}
+
+.box input:nth-child(n+19):nth-child(-n+27),
+.box input:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 3px solid black;
+}
+
+.box input:nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+button {
+    background-color: #06a91e;
+    color: white;
+    font-size: 30px;
+    margin: 2px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10%;
     
 }
+
+button:hover {
+    color: #06a91e;
+    cursor: pointer ;
+}
+
+.input {
+    text-align: center;
+}
+
 .wrong{
-    background-color:#f94449;;
+    color:#f94449;
+    
 }
 .wright{
-    background-color: lightgreen;
+    color: lightgreen;
 }
+
