@@ -25,6 +25,8 @@ const value75 = document.getElementById('val75');
 const value76 = document.getElementById('val76');
 const value80 = document.getElementById('val80');
 
+let inputBox=[value1,value4,value7,value11,value13,value15,value20,value23,value26,value28,value29,value34,value36,value40,value48,value49,value54,value56,value59,value60,value63,value67,value72,value75,value76,value80];
+
 const colorChange = document.querySelector('.box');
 const finshed = document.getElementById('Finsh');
 const final = document.getElementById('gameFinsh');
@@ -58,17 +60,9 @@ let insertedValue22='';
 let insertedValue23='';
 let insertedValue24='';
 let insertedValue25='';
-
-
-
-
-
 let secouns='0'
 
-array.forEach(element => {
-    
-});
-//input cheak value ---------------------------------
+//-------------------input cheak value -----------------------
 value1.addEventListener('input', 
     function() {
         insertedValue = value1.value.trim(); 
@@ -87,12 +81,12 @@ value1.addEventListener('input',
 
 value4.addEventListener('input', 
     function() {
-        insertedValue = value4.value.trim(); 
-        if (insertedValue === '9') {
+        insertedValue1 = value4.value.trim(); 
+        if (insertedValue1 === '9') {
             value4.classList.add('wright');
             return insertedValue1;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue1 === ''){
             value4.classList.remove('wright');
             value4.classList.remove('wrong');
         }else{
@@ -103,12 +97,12 @@ value4.addEventListener('input',
 
 value7.addEventListener('input', 
     function() {
-        insertedValue = value7.value.trim(); 
-        if (insertedValue === '8') {
+        insertedValue2 = value7.value.trim(); 
+        if (insertedValue2 === '8') {
             value7.classList.add('wright');
             return insertedValue2;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue2 === ''){
             value7.classList.remove('wright');
             value7.classList.remove('wrong');
         }else{
@@ -118,12 +112,12 @@ value7.addEventListener('input',
     });
 value11.addEventListener('input', 
     function() {
-        insertedValue = value11.value.trim(); 
-        if (insertedValue === '5') {
+        insertedValue3 = value11.value.trim(); 
+        if (insertedValue3 === '5') {
             value11.classList.add('wright');
             return insertedValue3;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue3 === ''){
             value11.classList.remove('wright');
             value11.classList.remove('wrong');
         }else{
@@ -134,12 +128,12 @@ value11.addEventListener('input',
 
 value13.addEventListener('input', 
     function() {
-        insertedValue = value13.value.trim(); 
-        if (insertedValue === '8') {
+        insertedValue4 = value13.value.trim(); 
+        if (insertedValue4 === '8') {
             value13.classList.add('wright');
             return insertedValue4;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue4 === ''){
             value13.classList.remove('wright');
             value13.classList.remove('wrong');
         }else{
@@ -150,12 +144,12 @@ value13.addEventListener('input',
 
 value15.addEventListener('input', 
     function() {
-        insertedValue = value15.value.trim(); 
-        if (insertedValue === '4') {
+        insertedValue5 = value15.value.trim(); 
+        if (insertedValue5 === '4') {
             value15.classList.add('wright');
             return insertedValue5;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue5 === ''){
             value15.classList.remove('wright');
             value15.classList.remove('wrong');
         }else{
@@ -166,12 +160,12 @@ value15.addEventListener('input',
 
 value20.addEventListener('input', 
     function() {
-        insertedValue = value20.value.trim(); 
-        if (insertedValue === '8') {
+        insertedValue6 = value20.value.trim(); 
+        if (insertedValue6 === '8') {
             value20.classList.add('wright');
             return insertedValue6;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue6 === ''){
             value20.classList.remove('wright');
             value20.classList.remove('wrong');
         }else{
@@ -183,12 +177,12 @@ value20.addEventListener('input',
 
 value23.addEventListener('input', 
     function() {
-        insertedValue = value23.value.trim(); 
-        if (insertedValue === '7') {
+        insertedValue7 = value23.value.trim(); 
+        if (insertedValue7 === '7') {
             value23.classList.add('wright');
             return insertedValue7;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue7 === ''){
             value23.classList.remove('wright');
             value23.classList.remove('wrong');
         }else{
@@ -199,12 +193,12 @@ value23.addEventListener('input',
 
 value26.addEventListener('input', 
     function() {
-        insertedValue = value26.value.trim(); 
-        if (insertedValue === '5') {
+        insertedValue8 = value26.value.trim(); 
+        if (insertedValue8 === '5') {
             value26.classList.add('wright');
             return insertedValue8;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue8 === ''){
             value26.classList.remove('wright');
             value26.classList.remove('wrong');
         }else{
@@ -215,12 +209,12 @@ value26.addEventListener('input',
 
 value28.addEventListener('input', 
     function() {
-        insertedValue = value28.value.trim(); 
-        if (insertedValue === '5') {
+        insertedValue9 = value28.value.trim(); 
+        if (insertedValue9 === '5') {
             value28.classList.add('wright');
             return insertedValue9;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue9 === ''){
             value28.classList.remove('wright');
             value28.classList.remove('wrong');
         }else{
@@ -230,12 +224,12 @@ value28.addEventListener('input',
     });
 value29.addEventListener('input', 
     function() {
-        insertedValue = value29.value.trim(); 
-        if (insertedValue === '4') {
+        insertedValue10 = value29.value.trim(); 
+        if (insertedValue10 === '4') {
             value29.classList.add('wright');
             return insertedValue10;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue10 === ''){
             value29.classList.remove('wright');
             value29.classList.remove('wrong');
         }else{
@@ -246,12 +240,12 @@ value29.addEventListener('input',
 
 value34.addEventListener('input', 
     function() {
-        insertedValue = value34.value.trim(); 
-        if (insertedValue === '7') {
+        insertedValue11 = value34.value.trim(); 
+        if (insertedValue11 === '7') {
             value34.classList.add('wright');
             return insertedValue11;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue11 === ''){
             value34.classList.remove('wright');
             value34.classList.remove('wrong');
         }else{
@@ -261,12 +255,12 @@ value34.addEventListener('input',
     });
 value36.addEventListener('input', 
     function() {
-        insertedValue = value36.value.trim(); 
-        if (insertedValue === '2') {
+        insertedValue12 = value36.value.trim(); 
+        if (insertedValue12 === '2') {
             value36.classList.add('wright');
             return insertedValue12;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue12 === ''){
             value36.classList.remove('wright');
             value36.classList.remove('wrong');
         }else{
@@ -277,12 +271,12 @@ value36.addEventListener('input',
 
 value40.addEventListener('input', 
     function() {
-        insertedValue = value40.value.trim(); 
-        if (insertedValue === '7') {
+        insertedValue13 = value40.value.trim(); 
+        if (insertedValue13 === '7') {
             value40.classList.add('wright');
             return insertedValue13;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue13 === ''){
             value40.classList.remove('wright');
             value40.classList.remove('wrong');
         }else{
@@ -292,12 +286,12 @@ value40.addEventListener('input',
     });
 value48.addEventListener('input', 
     function() {
-        insertedValue = value48.value.trim(); 
-        if (insertedValue === '3') {
+        insertedValue14 = value48.value.trim(); 
+        if (insertedValue14 === '3') {
             value48.classList.add('wright');
             return insertedValue14;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue14 === ''){
             value48.classList.remove('wright');
             value48.classList.remove('wrong');
         }else{
@@ -307,12 +301,12 @@ value48.addEventListener('input',
     });
 value49.addEventListener('input', 
     function() {
-        insertedValue = value49.value.trim(); 
-        if (insertedValue === '4') {
+        insertedValue15 = value49.value.trim(); 
+        if (insertedValue15 === '4') {
             value49.classList.add('wright');
             return insertedValue15;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue15 === ''){
             value49.classList.remove('wright');
             value49.classList.remove('wrong');
         }else{
@@ -322,12 +316,12 @@ value49.addEventListener('input',
     });
 value54.addEventListener('input', 
     function() {
-        insertedValue = value54.value.trim(); 
-        if (insertedValue === '1') {
+        insertedValue16 = value54.value.trim(); 
+        if (insertedValue16 === '1') {
             value54.classList.add('wright');
             return insertedValue16;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue16 === ''){
             value54.classList.remove('wright');
             value54.classList.remove('wrong');
         }else{
@@ -337,12 +331,12 @@ value54.addEventListener('input',
     });
 value56.addEventListener('input', 
     function() {
-        insertedValue = value56.value.trim(); 
-        if (insertedValue === '9') {
+        insertedValue17 = value56.value.trim(); 
+        if (insertedValue17 === '9') {
             value56.classList.add('wright');
             return insertedValue17;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue17 === ''){
             value56.classList.remove('wright');
             value56.classList.remove('wrong');
         }else{
@@ -352,12 +346,12 @@ value56.addEventListener('input',
     });
 value59.addEventListener('input', 
     function() {
-        insertedValue = value59.value.trim(); 
-        if (insertedValue === '6') {
+        insertedValue18 = value59.value.trim(); 
+        if (insertedValue18 === '6') {
             value59.classList.add('wright');
             return insertedValue18;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue18 === ''){
             value59.classList.remove('wright');
             value59.classList.remove('wrong');
         }else{
@@ -367,12 +361,12 @@ value59.addEventListener('input',
     });
 value60.addEventListener('input', 
     function() {
-        insertedValue = value60.value.trim(); 
-        if (insertedValue === '7') {
+        insertedValue19 = value60.value.trim(); 
+        if (insertedValue19 === '7') {
             value60.classList.add('wright');
             return insertedValue19;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue19 === ''){
             value60.classList.remove('wright');
             value60.classList.remove('wrong');
         }else{
@@ -382,12 +376,12 @@ value60.addEventListener('input',
     });
 value63.addEventListener('input', 
     function() {
-        insertedValue = value63.value.trim(); 
-        if (insertedValue === '8') {
+        insertedValue20 = value63.value.trim(); 
+        if (insertedValue20 === '8') {
             value63.classList.add('wright');
             return insertedValue20;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue20 === ''){
             value63.classList.remove('wright');
             value63.classList.remove('wrong');
         }else{
@@ -397,12 +391,12 @@ value63.addEventListener('input',
     });
 value67.addEventListener('input', 
     function() {
-        insertedValue = value67.value.trim(); 
-        if (insertedValue === '1') {
+        insertedValue21 = value67.value.trim(); 
+        if (insertedValue21 === '1') {
             value67.classList.add('wright');
             return insertedValue21;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue21 === ''){
             value67.classList.remove('wright');
             value67.classList.remove('wrong');
         }else{
@@ -412,12 +406,12 @@ value67.addEventListener('input',
     });
 value72.addEventListener('input', 
     function() {
-        insertedValue = value72.value.trim(); 
-        if (insertedValue === '6') {
+        insertedValue22 = value72.value.trim(); 
+        if (insertedValue22 === '6') {
             value72.classList.add('wright');
             return insertedValue22;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue22 === ''){
             value72.classList.remove('wright');
             value72.classList.remove('wrong');
         }else{
@@ -427,12 +421,12 @@ value72.addEventListener('input',
     });
 value75.addEventListener('input', 
     function() {
-        insertedValue = value75.value.trim(); 
-        if (insertedValue === '1') {
+        insertedValue23 = value75.value.trim(); 
+        if (insertedValue23 === '1') {
             value75.classList.add('wright');
             return insertedValue23;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue23 === ''){
             value75.classList.remove('wright');
             value75.classList.remove('wrong');
         }else{
@@ -442,12 +436,12 @@ value75.addEventListener('input',
     });
 value76.addEventListener('input', 
     function() {
-        insertedValue = value76.value.trim(); 
-        if (insertedValue === '2') {
+        insertedValue24 = value76.value.trim(); 
+        if (insertedValue24 === '2') {
             value76.classList.add('wright');
             return insertedValue24;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue24 === ''){
             value76.classList.remove('wright');
             value76.classList.remove('wrong');
         }else{
@@ -457,12 +451,12 @@ value76.addEventListener('input',
     });
 value80.addEventListener('input', 
     function() {
-        insertedValue = value80.value.trim(); 
-        if (insertedValue === '7') {
+        insertedValue25 = value80.value.trim(); 
+        if (insertedValue25 === '7') {
             value80.classList.add('wright');
             return insertedValue25;
         }
-        else if(insertedValue === ''){
+        else if(insertedValue25 === ''){
             value80.classList.remove('wright');
             value80.classList.remove('wrong');
         }else{
@@ -470,14 +464,11 @@ value80.addEventListener('input',
 
         }
     });
-//------------start function
-start.addEventListener("click", function() {
-    final.innerHTML = "The time is: " + time.innerText; // Display the timer value when Start button is clicked
-});
-//-----------timer---------------------    
+
+//----------------timer---------------------    
 let timerInterval;
 let startTime;
-
+let formattedTime;
 function startTimer() {
     startTime = Date.now();
     timerInterval = setInterval(updateTimer, 1000);
@@ -488,7 +479,8 @@ function updateTimer() {
     const currentTime = Date.now();
     const elapsedTime = currentTime - startTime;
     const formattedTime = formatTime(elapsedTime);
-    document.getElementById("timer").innerText = (formattedTime);
+    document.getElementById("timer").innerText = ('Your Time is '+formattedTime);
+    return formattedTime
 }
 
 function formatTime(time) {
@@ -502,14 +494,27 @@ function formatTime(time) {
         String(seconds).padStart(2, '0')
     );
 }
-
-
+//------------start function-------------------
+start.addEventListener("click", function() {
+    inputBox.forEach(changeToUnable => {
+        changeToUnable.disabled= false;
+        
+    });    
+});
+//-------------finsh function ------------------
 finshed.addEventListener("click",function(){
-    if(insertedValue1 ||insertedValue1||insertedValue3||insertedValue4||insertedValue5||insertedValue6||insertedValue7||insertedValue8||insertedValue9||insertedValue10||insertedValue11||insertedValue12||insertedValue13||insertedValue14||insertedValue15||insertedValue16||insertedValue17
-        ||insertedValue18||insertedValue19||insertedValue20||insertedValue21||insertedValue22||insertedValue23||insertedValue24||insertedValue25 ===''){
-        final.innerHTML="ther is still emty blanc??";
+    if(insertedValue ==="2"&&insertedValue1 ==='9'&&insertedValue2 ==='8'&&insertedValue3==='5'&&insertedValue4==='8'&&insertedValue5==='4'&&insertedValue6==='8'&&insertedValue7==='7'&&insertedValue8==='5'&&insertedValue9==='5'&&insertedValue10==='4'&&insertedValue11==='7'&&insertedValue12==='2'&&insertedValue13==='7'&&insertedValue14==='3'&&insertedValue15==='4'&&insertedValue16==='1'&&insertedValue17==='9'
+        &&insertedValue18==='6'&&insertedValue19==='7'&&insertedValue20==='8'&&insertedValue21==='1'&&insertedValue22==='6'&&insertedValue23==='1'&&insertedValue24==='2'&&insertedValue25==='7'){
+        final.innerHTML==="";
+        final.innerHTML="!!!!You Finsh the Game!!!" ;
+        clearInterval(timerInterval);
+        document.getElementById("startBtn").disabled = false;
+        
     }else{
-        final.innerHTML = "The game is finshed!";
+        final.innerHTML="";
+        final.innerHTML = "??There is still empty Blanc??";
+        
     }
     
-})
+
+});
